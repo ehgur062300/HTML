@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Stduy_Raking_Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../HTML/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    
+    <!--데이터 받아올때 하나라도 입력 안했을때-->
+    <script language="JavaScript">
+        function dataChk()
+        {
+        
+        }  
+      </script>
+
+</head>
+<body class="pt-5">
+
+<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Intro2.html"><h5 class="text-white h4">Current Ranking</h5></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            
+            <!--닉네임 받아오기-->
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class= "container text-center" style="padding-top: 10px;">
+    <div class="row" style="float: left; margin-right: 1px;">
+        <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Data Insert
+            </button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Data Insert</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <nav class="navbar bg-light">
+                                <form class="container-fluid">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">시간</span>
+                                        <input type="text" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2">공부내용</span>
+                                        <input type="text" class="form-control" placeholder="Study_content" aria-label="Study_content" aria-describedby="basic-addon3">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon3">참고자료</span>
+                                        <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="basic-addon4">
+                                    </div>
+                                </form>
+                            </nav>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="float: left; margin-right: 1px;">
+        <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                Data Delete
+            </button>
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel2">Data Delete</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <nav class="navbar bg-light">
+                                <form class="container-fluid">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">시간</span>
+                                        <input type="text" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2">공부내용</span>
+                                        <input type="text" class="form-control" placeholder="Study_content" aria-label="Study_content" aria-describedby="basic-addon3">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon3">참고자료</span>
+                                        <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="basic-addon4">
+                                    </div>
+                                </form>
+                            </nav>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="float: left; margin-right: 1px;">
+        <div class="col">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                Data Modify
+            </button>
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel3">Data Modify</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <nav class="navbar bg-light">
+                                <form class="container-fluid">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">시간</span>
+                                        <input type="text" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon2">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2">공부내용</span>
+                                        <input type="text" class="form-control" placeholder="Study_content" aria-label="Study_content" aria-describedby="basic-addon3">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon3">참고자료</span>
+                                        <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="basic-addon4">
+                                    </div>
+                                    
+                                </form>
+                            </nav>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="float: left; margin-right: 1px;">
+    <div class="col">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+            List
+        </button>
+        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel4">Total List</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <nav class="navbar bg-light">
+                            <form class="container-fluid">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">시간</span>
+                                    <input type="text" class="form-control" placeholder="Time" aria-label="Time" aria-describedby="basic-addon2">
+                                
+                                    <span class="input-group-text" id="basic-addon2">공부내용</span>
+                                    <input type="text" class="form-control" placeholder="Study_content" aria-label="Study_content" aria-describedby="basic-addon3">
+                                
+                                    <span class="input-group-text" id="basic-addon3">참고자료</span>
+                                    <input type="url" class="form-control" placeholder="URL" aria-label="URL" aria-describedby="basic-addon4">
+                                </div>
+                            </form>
+                        </nav>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mx-auto" style="padding-top: 5%; text-align: center;">
+    <h1>Ranking</h1>
+</div>
+
+<table style="margin: auto; text-align: center; width: 70%;" >
+    <tr style="background-color:lightgrey">
+        <th><h3>랭킹</h3></th>
+        <th><h3>이름</h3></th>
+        <th><h3>시간</h3></th>
+        <th><h3>공부내용</h3></th>
+    </tr>
+    <tr>
+        <td><h4>1</h4></td>
+        <td><h4>홍길동</h4></td>
+        <td><h4>1시간 30분</h4></td>
+        <td><h4>HTML 공부</h4></td>
+    </tr>
+</table>
+
+
+<script src="../HTML/bootstrap-5.2.3-dist/jquery-3.5.1.js"></script>
+<script src="../HTML/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
